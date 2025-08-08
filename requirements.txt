@@ -1,6 +1,37 @@
+# Arquivo de dependências para o Digitalizador PRO V3.1
+
+# Framework principal para a interface web
 streamlit
+
+# Biblioteca para processamento de imagem (detecção de bordas, etc.)
 opencv-python-headless
+
+# Biblioteca fundamental para computação numérica, usada pelo OpenCV
 numpy
+
+# Wrapper Python para o motor de OCR Tesseract
 pytesseract
+
+# Biblioteca para manipulação de imagens (abrir, salvar, rotacionar)
 Pillow
-reportlab
+
+# Biblioteca para manipulação avançada de arquivos PDF (merge)
+# Usada para criar o PDF pesquisável multi-páginas.
+pypdf
+
+# NOTA IMPORTANTE:
+# O 'pytesseract' requer que o motor Tesseract OCR esteja instalado no seu sistema.
+#
+# - No Windows: Baixe o instalador do repositório oficial do Tesseract.
+#   (ex: https://github.com/UB-Mannheim/tesseract/wiki)
+#   Certifique-se de adicionar o diretório de instalação ao PATH do sistema.
+#
+# - No macOS (usando Homebrew):
+#   brew install tesseract
+#   brew install tesseract-lang (para pacotes de idiomas)
+#
+# - No Linux (Debian/Ubuntu):
+#   sudo apt-get update
+#   sudo apt-get install tesseract-ocr
+#   sudo apt-get install tesseract-ocr-por (para o idioma português)
+#   sudo apt-get install tesseract-ocr-eng (para o idioma inglês)
